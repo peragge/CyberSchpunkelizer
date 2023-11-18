@@ -1,6 +1,10 @@
 # Using the Adafruit's MPR121 capacitive touch board and this guide: https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial/python-circuitpython
 # Install libraries "sudo pip3 install adafruit-circuitpython-mpr121"
 
+# Make sure to replace "sound1.mp3", "sound2.mp3", etc., with the actual paths to your sound files. Also, adjust the pin assignments in the sounds dictionary based on your button configurations.
+# This script uses the MPR121 library to detect touch events and Pygame mixer to play the corresponding sound files. The loop continuously checks for touch events and triggers the associated sound when a touch is detected.
+# Remember to adapt the script based on your specific needs and hardware setup.
+
 import board
 import busio
 import adafruit_mpr121
